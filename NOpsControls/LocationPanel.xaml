@@ -5,59 +5,38 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NOpsControls"
              mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="450" Foreground="Ivory">
-    <Border Background="#5D5C5C" BorderBrush="Red" BorderThickness="1">
+             d:DesignHeight="110" d:DesignWidth="450" Foreground="Ivory">
+    <Border Background="#5D5C5C" BorderBrush="Red" BorderThickness="1"
+            MaxHeight="110" MaxWidth="450">
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="17*"/>
                 <RowDefinition Height="20*"/>
-                <RowDefinition Height="15*"/>
-                <RowDefinition Height="70*"/>
+                <RowDefinition Height="20*"/>
             </Grid.RowDefinitions>
-            <TextBlock FontSize="20" Padding="3,0">WQQQQQQQQQ6666666666MMMMMMMMMW</TextBlock>
-            <Grid Row="1" VerticalAlignment="Center" Margin="0,0,0,5">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Padding="5,0">Off Layout Name:</TextBlock>
-                    <TextBlock Name="OffLayoutName" Padding="5,0">Test Name</TextBlock>
-                </StackPanel>
-            </Grid>
-            <Grid Row="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid Column="0">
-                    <DockPanel VerticalAlignment="Center">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Row="0" Grid.Column="0" Padding="5,0" HorizontalAlignment="Right">Type:</TextBlock>
-                            <TextBlock Grid.Row="0" Grid.Column="1" Padding="5,0">Shipper</TextBlock>
-                            <TextBlock Grid.Row="1" Grid.Column="0" Padding="5,0" HorizontalAlignment="Right">Frequency:</TextBlock>
-                            <TextBlock Grid.Row="1" Grid.Column="1" Padding="5,0">Normal</TextBlock>
-                            <TextBlock Grid.Row="2" Grid.Column="0" Padding="5,0" HorizontalAlignment="Right">Capacity:</TextBlock>
-                            <TextBlock Grid.Row="2" Grid.Column="1" Padding="5,0">2</TextBlock>
-                            <TextBlock Grid.Row="3" Grid.Column="0" Padding="5,0" HorizontalAlignment="Right">Used:</TextBlock>
-                            <TextBlock Grid.Row="3" Grid.Column="1" Padding="5,0">0</TextBlock>
-                        </Grid>
-                    </DockPanel>
-                </Grid>
-                <Grid Column="1">
-                    <ComboBox>
-                        <ComboBoxItem>Box</ComboBoxItem>
-                        <ComboBoxItem>Tank</ComboBoxItem>
-                        <ComboBoxItem>Flat</ComboBoxItem>
-                        <ComboBoxItem>Hop</ComboBoxItem>
-                    </ComboBox>
-                </Grid>
-            </Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.ColumnSpan="8" FontSize="20" Padding="3,0">WQQygQQQQQ6666666666MMMMMMMMMW</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Padding="5,0" FontSize="16">Shipper</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="6" Padding="5,0" HorizontalAlignment="Right">Freq:</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="7" Padding="5,0">Normal</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" Padding="5,0" HorizontalAlignment="Right" VerticalAlignment="Center">Capacity:</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" Padding="5,0" VerticalAlignment="Center">2</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="2" Padding="5,0" HorizontalAlignment="Right" VerticalAlignment="Center">Used:</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="3" Padding="5,0" VerticalAlignment="Center">0</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="4"  Padding="5,0" VerticalAlignment="Center">Cars:</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="3" Padding="5,0" VerticalAlignment="Center">Box, Flat</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Padding="5,0" VerticalAlignment="Center">Off Layout Name:</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="4" Padding="5,0"  VerticalAlignment="Center">West Staging Name</TextBlock>
         </Grid>
     </Border>
 </UserControl>
